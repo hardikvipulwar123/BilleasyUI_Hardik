@@ -13,7 +13,7 @@ class App extends React.Component {
    }
 
 //using api
-   async mymethod() {
+   async componentDidMount()() {
       // GET request using fetch with async/await
       const response = await fetch('http://www.mocky.io/v2/5ecb5c353000008f00ddd5a0');
       const data = await response.json();
@@ -30,8 +30,8 @@ class App extends React.Component {
    }
 }
 
-//created a class serv
-class serv extends React.mymethod {
+//created a Image
+class Image extends React.mymethod {
    render() {
       return (
          <img key={this.props.data.full} src={this.props.data.full} srcSet={`${this.props.data.small} 300w, ${this.props.data.full} 768w, ${this.props.data.regular} 1280w, ${this.props.data.thumb} 3200w`}
